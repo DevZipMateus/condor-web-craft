@@ -36,7 +36,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/533f2f65-91bb-4532-9271-1dd4d8665ecd.png" 
               alt="Condor Embalagens - Logo"
-              className="h-10 w-auto"
+              className="h-12 w-auto"
             />
             <div className="text-white">
               <div className="font-bold text-xl">Condor</div>
