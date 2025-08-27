@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Phone, Mail, Clock, MessageCircle, MapPin, Send } from 'lucide-react';
+import { Phone, Mail, Clock, MapPin, Send } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -91,7 +91,11 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="bg-green-500 hover:bg-green-600 text-white p-6 rounded-xl text-center transition-all duration-300 hover:scale-105 group"
               >
-                <MessageCircle className="mx-auto mb-3 group-hover:scale-110 transition-transform" size={28} />
+                <img 
+                  src="/lovable-uploads/dae22125-e996-407c-8b6e-017686c6788c.png" 
+                  alt="WhatsApp"
+                  className="w-7 h-7 mx-auto mb-3 group-hover:scale-110 transition-transform"
+                />
                 <div className="font-semibold">WhatsApp</div>
                 <div className="text-sm opacity-90">Resposta rápida</div>
               </a>
@@ -142,10 +146,14 @@ const Contact = () => {
                   href="https://wa.me/5521998822692?text=Olá! Gostaria de solicitar um orçamento para embalagens personalizadas." 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="btn-hero w-full text-center group"
+                  className="btn-hero w-full text-center group flex items-center justify-center"
                 >
                   Solicitar Orçamento Agora
-                  <MessageCircle className="ml-2 group-hover:scale-110 transition-transform" size={20} />
+                  <img 
+                    src="/lovable-uploads/dae22125-e996-407c-8b6e-017686c6788c.png" 
+                    alt="WhatsApp"
+                    className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform"
+                  />
                 </a>
 
                 <p className="text-white/60 text-sm text-center">

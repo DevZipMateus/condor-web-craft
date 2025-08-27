@@ -101,9 +101,14 @@ const Products = () => {
                   href="https://wa.me/5521998822692" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="btn-outline w-full text-center"
+                  className="btn-outline w-full text-center flex items-center justify-center"
                 >
                   Solicitar Orçamento
+                  <img 
+                    src="/lovable-uploads/dae22125-e996-407c-8b6e-017686c6788c.png" 
+                    alt="WhatsApp"
+                    className="w-4 h-4 ml-2"
+                  />
                 </a>
               </div>
             </div>
@@ -138,9 +143,14 @@ const Products = () => {
               href="https://wa.me/5521998822692" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="btn-hero"
+              className="btn-hero flex items-center justify-center mx-auto w-fit"
             >
               Fale com Especialista
+              <img 
+                src="/lovable-uploads/dae22125-e996-407c-8b6e-017686c6788c.png" 
+                alt="WhatsApp"
+                className="w-5 h-5 ml-2"
+              />
             </a>
           </div>
         </div>
