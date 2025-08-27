@@ -88,7 +88,9 @@ const Hero = () => {
             {/* Logo/Image */}
             <div className="animate-float lg:justify-self-end">
               <div className="relative">
-                <div className="absolute inset-0 bg-white/10 rounded-full blur-3xl scale-110"></div>
+                {/* White opaque circle background */}
+                <div className="absolute inset-0 bg-white/20 rounded-full blur-sm scale-125"></div>
+                <div className="absolute inset-0 bg-white/10 rounded-full scale-110"></div>
                 <img 
                   src="/lovable-uploads/533f2f65-91bb-4532-9271-1dd4d8665ecd.png" 
                   alt="Condor - Símbolo de força e tradição em embalagens"
