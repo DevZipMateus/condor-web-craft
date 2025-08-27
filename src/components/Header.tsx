@@ -27,82 +27,82 @@ const Header = () => {
       isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg' : 'bg-white'
     }`}>
       <div className="section-container">
-        <nav className="flex items-center justify-between py-4">
+        <nav className="flex items-center justify-between py-3 md:py-4">
           {/* Logo */}
           <div 
-            className="flex items-center space-x-3 cursor-pointer"
+            className="flex items-center space-x-2 md:space-x-3 cursor-pointer"
             onClick={() => scrollToSection('hero')}
           >
             <img 
               src="/lovable-uploads/533f2f65-91bb-4532-9271-1dd4d8665ecd.png" 
               alt="Condor Embalagens - Logo"
-              className="h-12 w-auto"
+              className="h-8 md:h-10 lg:h-12 w-auto"
             />
             <div className="text-condor-navy">
-              <div className="font-bold text-xl">Condor</div>
-              <div className="text-sm opacity-90">Embalagens</div>
+              <div className="font-bold text-base md:text-lg lg:text-xl">Condor</div>
+              <div className="text-xs md:text-sm opacity-90">Embalagens</div>
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <button onClick={() => scrollToSection('hero')} className="text-condor-navy hover:text-accent transition-colors">
+          <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+            <button onClick={() => scrollToSection('hero')} className="text-condor-navy hover:text-accent transition-colors text-sm xl:text-base">
               Início
             </button>
-            <button onClick={() => scrollToSection('about')} className="text-condor-navy hover:text-accent transition-colors">
+            <button onClick={() => scrollToSection('about')} className="text-condor-navy hover:text-accent transition-colors text-sm xl:text-base">
               Sobre
             </button>
-            <button onClick={() => scrollToSection('products')} className="text-condor-navy hover:text-accent transition-colors">
+            <button onClick={() => scrollToSection('products')} className="text-condor-navy hover:text-accent transition-colors text-sm xl:text-base">
               Produtos
             </button>
-            <button onClick={() => scrollToSection('contact')} className="text-condor-navy hover:text-accent transition-colors">
+            <button onClick={() => scrollToSection('contact')} className="text-condor-navy hover:text-accent transition-colors text-sm xl:text-base">
               Contato
             </button>
             <a 
               href="https://wa.me/5521998822692" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-accent text-white px-6 py-2 rounded-lg hover:bg-accent/90 transition-colors font-medium"
+              className="bg-accent text-white px-4 xl:px-6 py-2 rounded-lg hover:bg-accent/90 transition-colors font-medium text-sm xl:text-base"
             >
               Fale Conosco
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile/Tablet Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-condor-navy p-2"
+            className="lg:hidden text-condor-navy p-2"
             aria-label="Menu"
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </nav>
 
-        {/* Mobile Menu */}
+        {/* Mobile/Tablet Menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white/95 backdrop-blur-sm border-t border-gray-200">
-            <div className="py-4 space-y-4">
+          <div className="lg:hidden bg-white/95 backdrop-blur-sm border-t border-gray-200">
+            <div className="py-4 space-y-2">
               <button 
                 onClick={() => scrollToSection('hero')} 
-                className="block w-full text-left text-condor-navy hover:text-accent transition-colors px-4 py-2"
+                className="block w-full text-left text-condor-navy hover:text-accent transition-colors px-4 py-3 text-base"
               >
                 Início
               </button>
               <button 
                 onClick={() => scrollToSection('about')} 
-                className="block w-full text-left text-condor-navy hover:text-accent transition-colors px-4 py-2"
+                className="block w-full text-left text-condor-navy hover:text-accent transition-colors px-4 py-3 text-base"
               >
                 Sobre
               </button>
               <button 
                 onClick={() => scrollToSection('products')} 
-                className="block w-full text-left text-condor-navy hover:text-accent transition-colors px-4 py-2"
+                className="block w-full text-left text-condor-navy hover:text-accent transition-colors px-4 py-3 text-base"
               >
                 Produtos
               </button>
               <button 
                 onClick={() => scrollToSection('contact')} 
-                className="block w-full text-left text-condor-navy hover:text-accent transition-colors px-4 py-2"
+                className="block w-full text-left text-condor-navy hover:text-accent transition-colors px-4 py-3 text-base"
               >
                 Contato
               </button>
@@ -111,7 +111,7 @@ const Header = () => {
                   href="https://wa.me/5521998822692" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="bg-accent text-white px-6 py-2 rounded-lg hover:bg-accent/90 transition-colors font-medium inline-block"
+                  className="bg-accent text-white px-6 py-3 rounded-lg hover:bg-accent/90 transition-colors font-medium inline-block w-full text-center"
                 >
                   Fale Conosco
                 </a>

@@ -63,7 +63,7 @@
 
   /* Custom scrollbar */
   ::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
   }
 
   ::-webkit-scrollbar-track {
@@ -85,85 +85,55 @@
     background: var(--condor-gradient);
   }
 
-  .hero-title {
-    @apply text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight;
-  }
-
-  .hero-subtitle {
-    @apply text-lg md:text-xl text-white/90 font-medium;
-  }
-
-  /* Button Variants */
+  /* Button Variants - Mobile First Responsive */
   .btn-hero {
-    @apply bg-white/10 text-white border-2 border-white/60 px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:bg-accent hover:text-accent-foreground hover:border-accent hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/50;
+    @apply bg-white/10 text-white border-2 border-white/60 px-6 py-3 md:px-8 md:py-4 rounded-lg font-semibold transition-all duration-300 hover:bg-accent hover:text-accent-foreground hover:border-accent hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/50 text-sm md:text-base;
   }
 
   .btn-primary {
-    @apply bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-primary/90 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary/50;
+    @apply bg-primary text-primary-foreground px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-primary/90 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm md:text-base;
   }
 
   .btn-outline {
-    @apply bg-transparent text-primary border-2 border-primary/60 px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:border-primary focus:outline-none focus:ring-2 focus:ring-primary/50;
+    @apply bg-transparent text-primary border-2 border-primary/60 px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:border-primary focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm md:text-base;
   }
 
-  /* Section Styles */
+  /* Section Styles - Mobile First */
   .section-container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
-  .section-title {
-    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6;
-  }
-
-  .section-subtitle {
-    @apply text-lg md:text-xl text-muted-foreground mb-12;
-  }
-
-  /* Product Card Styles */
-  .product-card {
-    @apply bg-white rounded-2xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border border-border;
-  }
-
-  .product-title {
-    @apply text-xl font-bold text-primary mb-4;
-  }
-
-  .product-description {
-    @apply text-muted-foreground leading-relaxed;
-  }
-
-  /* WhatsApp Float Button */
+  /* WhatsApp Float Button - Responsive */
   .whatsapp-float {
-    @apply fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:bg-green-600 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-green-500/50;
+    @apply fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 bg-green-500 text-white p-3 md:p-4 rounded-full shadow-lg transition-all duration-300 hover:bg-green-600 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-green-500/50;
   }
 
-  /* Navigation Styles */
-  .nav-link {
-    @apply text-white/80 hover:text-white transition-colors duration-300 font-medium;
-  }
-
-  .nav-active {
-    @apply text-white font-semibold;
-  }
-
-  /* Animations */
+  /* Animations - Optimized for mobile */
   .animate-fade-in {
-    animation: fadeIn 0.8s ease-out forwards;
+    animation: fadeIn 0.6s ease-out forwards;
   }
 
   .animate-slide-up {
-    animation: slideUp 0.8s ease-out forwards;
+    animation: slideUp 0.6s ease-out forwards;
   }
 
   .animate-float {
     animation: float 3s ease-in-out infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-fade-in,
+    .animate-slide-up,
+    .animate-float {
+      animation: none;
+    }
   }
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(15px);
   }
   to {
     opacity: 1;
@@ -174,7 +144,7 @@
 @keyframes slideUp {
   from {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -187,11 +157,37 @@
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
   }
 }
 
 /* Contact section gradient */
 .contact-gradient {
   background: linear-gradient(135deg, hsl(215 100% 8%) 0%, hsl(215 100% 15%) 100%);
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 640px) {
+  .hero-gradient {
+    background-attachment: scroll;
+  }
+  
+  /* Improve touch targets on mobile */
+  button, a {
+    min-height: 44px;
+  }
+}
+
+/* Tablet-specific improvements */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .section-container {
+    @apply px-6;
+  }
+}
+
+/* Large screen improvements */
+@media (min-width: 1920px) {
+  .section-container {
+    @apply max-w-8xl;
+  }
 }
