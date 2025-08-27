@@ -1,17 +1,15 @@
-
 import React from 'react';
 import { ArrowRight, Award, Users, Clock } from 'lucide-react';
-
 const Hero = () => {
   const scrollToProducts = () => {
     const element = document.getElementById('products');
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <section id="hero" className="min-h-screen hero-gradient relative overflow-hidden">
+  return <section id="hero" className="min-h-screen hero-gradient relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 border border-white/30 rounded-full"></div>
@@ -42,19 +40,11 @@ const Hero = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                <button 
-                  onClick={scrollToProducts}
-                  className="btn-hero group"
-                >
+                <button onClick={scrollToProducts} className="btn-hero group">
                   Ver Produtos
                   <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
                 </button>
-                <a 
-                  href="https://wa.me/5521998822692" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="btn-outline bg-white/5 text-white border-white/60 hover:bg-white hover:text-primary"
-                >
+                <a href="https://wa.me/5521998822692" target="_blank" rel="noopener noreferrer" className="btn-outline bg-white/5 text-white border-white/60 hover:bg-white hover:text-primary">
                   Solicitar Orçamento
                 </a>
               </div>
@@ -89,20 +79,14 @@ const Hero = () => {
             <div className="animate-float lg:justify-self-end">
               <div className="relative">
                 {/* White opaque circle background */}
-                <div className="absolute inset-0 bg-white/20 rounded-full blur-sm scale-125"></div>
+                <div className="absolute inset-0 rounded-full blur-sm scale-125 bg-white/[0.53]"></div>
                 <div className="absolute inset-0 bg-white/10 rounded-full scale-110"></div>
-                <img 
-                  src="/lovable-uploads/533f2f65-91bb-4532-9271-1dd4d8665ecd.png" 
-                  alt="Condor - Símbolo de força e tradição em embalagens"
-                  className="relative z-10 w-80 h-auto mx-auto drop-shadow-2xl"
-                />
+                <img src="/lovable-uploads/533f2f65-91bb-4532-9271-1dd4d8665ecd.png" alt="Condor - Símbolo de força e tradição em embalagens" className="relative z-10 w-80 h-auto mx-auto drop-shadow-2xl" />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
