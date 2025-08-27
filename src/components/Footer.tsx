@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Heart, Phone, Mail, Clock } from 'lucide-react';
 
@@ -17,11 +16,16 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <img 
-                src="/lovable-uploads/533f2f65-91bb-4532-9271-1dd4d8665ecd.png" 
-                alt="Condor Embalagens"
-                className="h-16 w-auto"
-              />
+              <div className="relative">
+                {/* White opaque circle background */}
+                <div className="absolute inset-0 rounded-full bg-white/20 scale-125"></div>
+                <div className="absolute inset-0 bg-white/10 rounded-full scale-110"></div>
+                <img 
+                  src="/lovable-uploads/533f2f65-91bb-4532-9271-1dd4d8665ecd.png" 
+                  alt="Condor Embalagens"
+                  className="relative z-10 h-16 w-auto"
+                />
+              </div>
               <div className="text-white">
                 <div className="font-bold text-2xl">Condor</div>
                 <div className="text-sm opacity-90">Embalagens e Descartáveis</div>
