@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Phone, Mail, Clock, MapPin, Send } from 'lucide-react';
 
@@ -84,12 +83,12 @@ const Contact = () => {
             </div>
 
             {/* Quick Actions */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="flex justify-center">
               <a 
                 href="https://wa.me/5521998822692" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 text-white p-6 rounded-xl text-center transition-all duration-300 hover:scale-105 group"
+                className="bg-green-500 hover:bg-green-600 text-white p-6 rounded-xl text-center transition-all duration-300 hover:scale-105 group w-64"
               >
                 <img 
                   src="/lovable-uploads/dae22125-e996-407c-8b6e-017686c6788c.png" 
@@ -98,15 +97,6 @@ const Contact = () => {
                 />
                 <div className="font-semibold">WhatsApp</div>
                 <div className="text-sm opacity-90">Resposta rápida</div>
-              </a>
-              
-              <a 
-                href="mailto:eliezio.mello@yahoo.com.br" 
-                className="bg-blue-500 hover:bg-blue-600 text-white p-6 rounded-xl text-center transition-all duration-300 hover:scale-105 group"
-              >
-                <Send className="mx-auto mb-3 group-hover:scale-110 transition-transform" size={28} />
-                <div className="font-semibold">E-mail</div>
-                <div className="text-sm opacity-90">Orçamentos detalhados</div>
               </a>
             </div>
           </div>
