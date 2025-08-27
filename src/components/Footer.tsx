@@ -19,7 +19,6 @@ const Footer = () => {
               <div className="relative">
                 {/* White solid circle background */}
                 <div className="absolute inset-0 rounded-full bg-white scale-125"></div>
-                <div className="absolute inset-0 bg-white scale-110"></div>
                 <img 
                   src="/lovable-uploads/533f2f65-91bb-4532-9271-1dd4d8665ecd.png" 
                   alt="Condor Embalagens"
