@@ -40,7 +40,7 @@ const Products = () => {
     {
       icon: Cookie,
       title: 'Caixas e Embalagens para Nuggets, Batata Frita e Porções',
-      description: 'Embalagens para nuggets, batata frita e porções diversas com alta resistência.',
+      description: 'Embalagens especializadas para nuggets, batata frita e porções diversas com alta resistência.',
       features: [
         'Material reforçado',
         'Ideal para delivery',
