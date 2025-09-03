@@ -28,8 +28,8 @@ const Header = () => {
               <img src="/lovable-uploads/533f2f65-91bb-4532-9271-1dd4d8665ecd.png" alt="Condor Embalagens - Logo" className="h-24 w-auto transform scale-125 md:scale-150 lg:scale-175 xl:scale-200 origin-left" />
             </div>
             <div className="text-condor-navy">
-              <div className="font-bold text-sm md:text-base lg:text-lg py-0 my-0 mx-[21px] px-[8px]">  CONDOR
-Embalagens</div>
+              <div className="font-bold text-base md:text-lg lg:text-xl">Condor</div>
+              <div className="text-xs md:text-sm opacity-90">Embalagens</div>
             </div>
           </div>
 
