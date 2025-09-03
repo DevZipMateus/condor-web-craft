@@ -87,7 +87,7 @@
 
   /* Button Variants - Mobile First Responsive */
   .btn-hero {
-    @apply bg-white/10 text-white border-2 border-white/60 px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-semibold transition-all duration-300 hover:bg-accent hover:text-accent-foreground hover:border-accent hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/50 text-sm md:text-base;
+    @apply bg-primary text-primary-foreground border-2 border-primary px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-semibold transition-all duration-300 hover:bg-primary/90 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm md:text-base;
   }
 
   .btn-primary {
