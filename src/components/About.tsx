@@ -106,11 +106,10 @@ const About = () => {
             </div>
             
             <div className="relative order-first lg:order-last">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl blur-xl"></div>
               <img 
                 src="/lovable-uploads/533f2f65-91bb-4532-9271-1dd4d8665ecd.png" 
                 alt="Condor - Tradição e inovação em embalagens"
-                className="relative z-10 w-48 md:w-56 lg:w-64 h-auto mx-auto opacity-80"
+                className="w-48 md:w-56 lg:w-64 h-auto mx-auto opacity-80"
               />
             </div>
           </div>
