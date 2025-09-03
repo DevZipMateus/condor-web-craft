@@ -39,57 +39,13 @@ const Products = () => {
     },
     {
       icon: Cookie,
-      title: 'Caixas para Nuggets e Porções',
+      title: 'Caixas e Embalagens para Nuggets, Batata Frita e Porções',
       description: 'Embalagens para nuggets, batata frita e porções diversas com alta resistência.',
       features: [
         'Material reforçado',
         'Ideal para delivery',
         'Ventilação adequada',
         'Compartimentos internos'
-      ]
-    },
-    {
-      icon: Package,
-      title: 'Embalagens Premium para Pipoca',
-      description: 'Baldes de papel/cartão com impressão personalizada em alta definição. Copos e saquinhos práticos para cinema, festas e eventos especiais.',
-      features: [
-        'Impressão fotográfica HD',
-        'Acabamento verniz UV',
-        'Tamanhos de 500ml a 3L',
-        'Material 100% reciclável'
-      ]
-    },
-    {
-      icon: Coffee,
-      title: 'Linha Gourmet para Hambúrguer',
-      description: 'Caixas tipo clamshell premium (abre e fecha). Papéis personalizados kraft para embrulhar hambúrgueres artesanais.',
-      features: [
-        'Design sustentável kraft',
-        'Dupla proteção térmica',
-        'Resistente a molhos',
-        'Visual gourmet diferenciado'
-      ]
-    },
-    {
-      icon: Utensils,
-      title: 'Embalagens Deluxe para Hot Dog',
-      description: 'Caixas e barquetas de papel cartonado premium. Saquinhos descartáveis personalizados com janela transparente.',
-      features: [
-        'Janela de acetato cristal',
-        'Base antiderrapante',
-        'Material dupla camada',
-        'Fechamento seguro'
-      ]
-    },
-    {
-      icon: Cookie,
-      title: 'Embalagens para Batata Frita e Porções',
-      description: 'Caixas e embalagens especializadas para nuggets, batata frita e porções diversas com tecnologia anti-umidade.',
-      features: [
-        'Sistema anti-umidade',
-        'Ideal para delivery e balcão',
-        'Múltiplos compartimentos',
-        'Resistência extra ao calor'
       ]
     }
   ];
