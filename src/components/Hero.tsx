@@ -91,14 +91,11 @@ const Hero = () => {
 
             {/* Logo/Image */}
             <div className="animate-float lg:justify-self-end order-first lg:order-last">
-              <div className="relative max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg mx-auto">
-                {/* White opaque circle background */}
-                <div className="absolute inset-0 rounded-full blur-sm scale-125 bg-white/[0.53]"></div>
-                <div className="absolute inset-0 bg-white/10 rounded-full scale-110"></div>
+              <div className="max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg mx-auto">
                 <img 
-                  src="/lovable-uploads/533f2f65-91bb-4532-9271-1dd4d8665ecd.png" 
+                  src="/lovable-uploads/0a63552f-8205-4979-bcdd-fba7ced78044.png" 
                   alt="Condor - Símbolo de força e tradição em embalagens" 
-                  className="relative z-10 w-full h-auto mx-auto drop-shadow-2xl" 
+                  className="w-full h-auto mx-auto drop-shadow-2xl" 
                 />
               </div>
             </div>
