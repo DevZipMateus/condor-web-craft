@@ -29,7 +29,7 @@ const Header = () => {
             </div>
             <div className="text-condor-navy">
               <div className="font-bold text-base md:text-lg lg:text-xl">Condor</div>
-              <div className="text-xs md:text-sm opacity-90">Embalagens</div>
+              <div className="text-xs md:text-sm opacity-90 mx-[23px]">Embalagens</div>
             </div>
           </div>
 
