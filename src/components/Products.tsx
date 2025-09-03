@@ -131,7 +131,7 @@ const Products = () => {
                 </div>
               </div>
               
-              <ul className="space-y-2 md:space-y-3 mb-6">
+              <ul className="space-y-2 md:space-y-3">
                 {product.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center space-x-3">
                     <div className="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></div>
@@ -139,24 +139,25 @@ const Products = () => {
                   </li>
                 ))}
               </ul>
-              
-              <div className="pt-4 md:pt-6 border-t border-border">
-                <a 
-                  href="https://wa.me/5521998822692" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="btn-outline w-full text-center flex items-center justify-center text-sm md:text-base px-4 md:px-6 py-2 md:py-3"
-                >
-                  Solicitar Orçamento
-                  <img 
-                    src="/lovable-uploads/dae22125-e996-407c-8b6e-017686c6788c.png" 
-                    alt="WhatsApp"
-                    className="w-3 h-3 md:w-4 md:h-4 ml-2"
-                  />
-                </a>
-              </div>
             </div>
           ))}
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center mb-12 md:mb-16">
+          <a 
+            href="https://wa.me/5521998822692" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn-hero flex items-center justify-center mx-auto w-fit text-sm md:text-base px-8 md:px-10 py-3 md:py-4 animate-scale-in"
+          >
+            Solicitar Orçamento para Todos os Produtos
+            <img 
+              src="/lovable-uploads/dae22125-e996-407c-8b6e-017686c6788c.png" 
+              alt="WhatsApp"
+              className="w-4 h-4 md:w-5 md:h-5 ml-2"
+            />
+          </a>
         </div>
 
         {/* Advantages Section */}
