@@ -1,46 +1,112 @@
 
 import React from 'react';
-import { Package, Coffee, Utensils, Cookie } from 'lucide-react';
+import { Package, Coffee, Utensils, Cookie, Box, ShoppingBag, FileText, Container } from 'lucide-react';
 
 const Products = () => {
   const products = [
     {
       icon: Coffee,
       title: 'Embalagens para Pipoca',
-      description: 'Baldes de papel/cartão com impressão personalizada. Copos e saquinhos práticos para cinema, festas e eventos.',
+      description: 'Linha completa de embalagens para pipoca com impressão personalizada.',
       features: [
         'Impressão em até 6 cores',
-        'Diversos tamanhos disponíveis',
+        'Diversos tamanhos disponíveis', 
         'Material resistente à gordura',
         'Personalização completa'
       ]
     },
     {
+      icon: Box,
+      title: 'Baldes de papel/cartão com impressão personalizada',
+      description: 'Baldes resistentes e personalizados para pipoca e outros alimentos.',
+      features: [
+        'Material de alta qualidade',
+        'Impressão personalizada',
+        'Diversos tamanhos',
+        'Resistente e durável'
+      ]
+    },
+    {
+      icon: Coffee,
+      title: 'Copos e saquinhos práticos para cinema, festas e eventos',
+      description: 'Soluções práticas e elegantes para eventos e estabelecimentos.',
+      features: [
+        'Design atrativo',
+        'Fácil manuseio',
+        'Ideal para eventos',
+        'Material de qualidade'
+      ]
+    },
+    {
       icon: Package,
       title: 'Embalagens para Hambúrguer',
-      description: 'Caixas tipo clamshell (abre e fecha). Papéis personalizados para embrulhar hambúrgueres.',
+      description: 'Soluções completas para embalar hambúrgueres com qualidade.',
       features: [
-        'Sistema abre e fecha prático',
+        'Diversos modelos',
         'Isolamento térmico',
         'Resistente à umidade',
-        'Design atrativo personalizado'
+        'Personalização completa'
+      ]
+    },
+    {
+      icon: Box,
+      title: 'Caixas tipo clamshell (abre e fecha)',
+      description: 'Caixas práticas com sistema de abertura e fechamento seguro.',
+      features: [
+        'Sistema abre e fecha',
+        'Fechamento seguro',
+        'Material resistente',
+        'Design funcional'
+      ]
+    },
+    {
+      icon: FileText,
+      title: 'Papéis personalizados para embrulhar hambúrgueres',
+      description: 'Papéis especiais com impressão personalizada para hambúrgueres.',
+      features: [
+        'Impressão personalizada',
+        'Material alimentício',
+        'Resistente à gordura',
+        'Visual atrativo'
       ]
     },
     {
       icon: Utensils,
       title: 'Embalagens para Hot Dog',
-      description: 'Caixas e barquetas de papel cartonado. Saquinhos descartáveis personalizados.',
+      description: 'Embalagens especializadas para hot dogs e lanches similares.',
       features: [
         'Formato ergonômico',
         'Fácil manuseio',
         'Material alimentício',
-        'Impressão de alta qualidade'
+        'Personalização disponível'
+      ]
+    },
+    {
+      icon: Container,
+      title: 'Caixas e barquetas de papel cartonado',
+      description: 'Caixas e barquetas resistentes em papel cartonado de qualidade.',
+      features: [
+        'Material resistente',
+        'Formato prático',
+        'Ideal para hot dogs',
+        'Qualidade superior'
+      ]
+    },
+    {
+      icon: ShoppingBag,
+      title: 'Saquinhos descartáveis personalizados',
+      description: 'Saquinhos práticos e descartáveis com personalização completa.',
+      features: [
+        'Personalização total',
+        'Material descartável',
+        'Prático e funcional',
+        'Diversos tamanhos'
       ]
     },
     {
       icon: Cookie,
       title: 'Caixas e Embalagens para Nuggets, Batata Frita e Porções',
-      description: 'Embalagens especializadas para nuggets, batata frita e porções diversas com alta resistência.',
+      description: 'Embalagens especializadas para nuggets, batata frita e outras porções.',
       features: [
         'Material reforçado',
         'Ideal para delivery',
