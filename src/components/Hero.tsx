@@ -95,7 +95,7 @@ const Hero = () => {
                 <img 
                   src="/lovable-uploads/0a63552f-8205-4979-bcdd-fba7ced78044.png" 
                   alt="Condor - Símbolo de força e tradição em embalagens" 
-                  className="w-full h-auto mx-auto drop-shadow-2xl" 
+                  className="w-full h-auto mx-auto drop-shadow-2xl filter brightness-0 invert" 
                 />
               </div>
             </div>
