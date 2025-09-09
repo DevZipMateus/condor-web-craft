@@ -74,10 +74,10 @@ const Hero = () => {
                 </div>
                 <div className="text-center">
                   <div className="flex justify-center mb-1 md:mb-2">
-                    <Users className="text-accent" size={20} />
+                    <Award className="text-accent" size={20} />
                   </div>
-                  <div className="text-xl md:text-2xl font-bold text-white">1000+</div>
-                  <div className="text-white/80 text-xs md:text-sm">Clientes Atendidos</div>
+                  <div className="text-xl md:text-2xl font-bold text-white">Brasil</div>
+                  <div className="text-white/80 text-xs md:text-sm">Atuação em todo o Brasil</div>
                 </div>
                 <div className="text-center">
                   <div className="flex justify-center mb-1 md:mb-2">
