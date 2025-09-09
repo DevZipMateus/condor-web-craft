@@ -43,7 +43,7 @@ const Products = () => {
       description: 'Soluções completas para embalar hambúrgueres com qualidade.',
       features: [
         'Diversos modelos',
-        'Isolamento térmico',
+        'Kraft personalizado',
         'Resistente à umidade',
         'Personalização completa'
       ]
