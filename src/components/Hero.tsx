@@ -22,7 +22,7 @@ const Hero = () => {
       </div>
 
       <div className="section-container relative z-10">
-        <div className="min-h-screen flex items-center py-20 md:py-0">
+        <div className="min-h-screen flex items-center pt-24 pb-12 sm:pt-28 sm:pb-16 md:pt-32 md:pb-20 lg:pt-36 lg:pb-0">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
             {/* Content */}
             <div className="animate-fade-in text-center lg:text-left">
