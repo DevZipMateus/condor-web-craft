@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Package, Coffee, Utensils, Cookie, Box, ShoppingBag, FileText, Container } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Products = () => {
   const products = [
@@ -130,9 +131,17 @@ const Products = () => {
           <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-primary mb-4 md:mb-6">
             Nossos <span className="text-secondary">Produtos</span>
           </h2>
-          <p className="text-base md:text-lg lg:text-xl text-muted-foreground px-4">
+          <p className="text-base md:text-lg lg:text-xl text-muted-foreground px-4 mb-6">
             Soluções completas em embalagens personalizadas para o seu negócio
           </p>
+          <div className="flex justify-center">
+            <Link 
+              to="/catalogo"
+              className="bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105 font-medium shadow-lg"
+            >
+              Ver Catálogo Completo
+            </Link>
+          </div>
         </div>
 
         {/* Products Grid */}

@@ -1,0 +1,251 @@
+import React from 'react';
+import { Package, Coffee, Utensils, Cookie, Box, ShoppingBag, FileText, Container, ArrowLeft } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
+const Catalogo = () => {
+  const products = [
+    {
+      icon: Coffee,
+      title: 'Embalagens para Pipoca',
+      description: 'Linha completa de embalagens para pipoca com impressão personalizada.',
+      features: [
+        'Impressão em até 6 cores',
+        'Diversos tamanhos disponíveis', 
+        'Material resistente à gordura',
+        'Personalização completa'
+      ],
+      image: '/lovable-uploads/0a63552f-8205-4979-bcdd-fba7ced78044.png'
+    },
+    {
+      icon: Box,
+      title: 'Baldes de papel/cartão com impressão personalizada',
+      description: 'Baldes resistentes e personalizados para pipoca e outros alimentos.',
+      features: [
+        'Material de alta qualidade',
+        'Impressão personalizada',
+        'Diversos tamanhos',
+        'Resistente e durável'
+      ],
+      image: '/lovable-uploads/0a63552f-8205-4979-bcdd-fba7ced78044.png'
+    },
+    {
+      icon: Coffee,
+      title: 'Copos e saquinhos práticos para cinema, festas e eventos',
+      description: 'Soluções práticas e elegantes para eventos e estabelecimentos.',
+      features: [
+        'Design atrativo',
+        'Fácil manuseio',
+        'Ideal para eventos',
+        'Material de qualidade'
+      ],
+      image: '/lovable-uploads/0a63552f-8205-4979-bcdd-fba7ced78044.png'
+    },
+    {
+      icon: Package,
+      title: 'Embalagens para Hambúrguer',
+      description: 'Soluções completas para embalar hambúrgueres com qualidade.',
+      features: [
+        'Diversos modelos',
+        'Kraft personalizado',
+        'Resistente à umidade',
+        'Personalização completa'
+      ],
+      image: '/lovable-uploads/0a63552f-8205-4979-bcdd-fba7ced78044.png'
+    },
+    {
+      icon: Box,
+      title: 'Caixas tipo clamshell (abre e fecha)',
+      description: 'Caixas práticas com sistema de abertura e fechamento seguro.',
+      features: [
+        'Sistema abre e fecha',
+        'Fechamento seguro',
+        'Material resistente',
+        'Design funcional'
+      ],
+      image: '/lovable-uploads/0a63552f-8205-4979-bcdd-fba7ced78044.png'
+    },
+    {
+      icon: FileText,
+      title: 'Papéis personalizados para embrulhar hambúrgueres',
+      description: 'Papéis especiais com impressão personalizada para hambúrgueres.',
+      features: [
+        'Impressão personalizada',
+        'Material alimentício',
+        'Resistente à gordura',
+        'Visual atrativo'
+      ],
+      image: '/lovable-uploads/0a63552f-8205-4979-bcdd-fba7ced78044.png'
+    },
+    {
+      icon: Utensils,
+      title: 'Embalagens para Hot Dog',
+      description: 'Embalagens especializadas para hot dogs e lanches similares.',
+      features: [
+        'Formato ergonômico',
+        'Fácil manuseio',
+        'Material alimentício',
+        'Personalização disponível'
+      ],
+      image: '/lovable-uploads/0a63552f-8205-4979-bcdd-fba7ced78044.png'
+    },
+    {
+      icon: Container,
+      title: 'Caixas e barquetas de papel cartonado',
+      description: 'Caixas e barquetas resistentes em papel cartonado de qualidade.',
+      features: [
+        'Material resistente',
+        'Formato prático',
+        'Ideal para hot dogs',
+        'Qualidade superior'
+      ],
+      image: '/lovable-uploads/0a63552f-8205-4979-bcdd-fba7ced78044.png'
+    },
+    {
+      icon: ShoppingBag,
+      title: 'Saquinhos descartáveis personalizados',
+      description: 'Saquinhos práticos e descartáveis com personalização completa.',
+      features: [
+        'Personalização total',
+        'Material descartável',
+        'Prático e funcional',
+        'Diversos tamanhos'
+      ],
+      image: '/lovable-uploads/0a63552f-8205-4979-bcdd-fba7ced78044.png'
+    },
+    {
+      icon: Cookie,
+      title: 'Caixas e Embalagens para Nuggets, Batata Frita e Porções',
+      description: 'Embalagens especializadas para nuggets, batata frita e outras porções.',
+      features: [
+        'Material reforçado',
+        'Ideal para delivery',
+        'Ventilação adequada',
+        'Compartimentos internos'
+      ],
+      image: '/lovable-uploads/0a63552f-8205-4979-bcdd-fba7ced78044.png'
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Header */}
+      <header className="bg-white shadow-lg sticky top-0 z-50">
+        <div className="section-container">
+          <div className="flex items-center justify-between py-4">
+            <Link to="/" className="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
+              <ArrowLeft size={20} />
+              <span className="font-medium">Voltar ao site</span>
+            </Link>
+            <div className="flex items-center space-x-3">
+              <img src="/lovable-uploads/533f2f65-91bb-4532-9271-1dd4d8665ecd.png" alt="Condor Embalagens" className="h-12 w-auto" />
+              <div className="text-condor-navy">
+                <div className="font-bold text-lg">Condor</div>
+                <div className="text-sm opacity-90">Embalagens</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-primary to-secondary text-white py-16">
+        <div className="section-container">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Catálogo de <span className="text-yellow-300">Produtos</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-white/90 mb-8">
+              Conheça nossa linha completa de embalagens personalizadas
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Products Section */}
+      <section className="py-16">
+        <div className="section-container">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+            {products.map((product, index) => (
+              <div 
+                key={index}
+                className="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border border-border"
+              >
+                <div className="aspect-video bg-gray-100 flex items-center justify-center">
+                  <img 
+                    src={product.image} 
+                    alt={product.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                
+                <div className="p-6">
+                  <div className="flex items-start space-x-4 mb-4">
+                    <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                      <product.icon className="text-primary" size={24} />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-primary mb-2">{product.title}</h3>
+                      <p className="text-muted-foreground leading-relaxed">{product.description}</p>
+                    </div>
+                  </div>
+                  
+                  <ul className="space-y-2 mb-6">
+                    {product.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                        <span className="text-sm text-muted-foreground">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <a 
+                    href="https://wa.me/5521998822692" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-full bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-all duration-300 font-medium flex items-center justify-center"
+                  >
+                    Solicitar Orçamento
+                    <img 
+                      src="/lovable-uploads/dae22125-e996-407c-8b6e-017686c6788c.png" 
+                      alt="WhatsApp"
+                      className="w-4 h-4 ml-2"
+                    />
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-gradient-to-r from-primary to-secondary py-16">
+        <div className="section-container">
+          <div className="text-center text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Não encontrou o que procura?
+            </h2>
+            <p className="text-xl mb-8 text-white/90">
+              Entre em contato conosco e desenvolvemos a solução ideal para o seu negócio
+            </p>
+            <a 
+              href="https://wa.me/5521998822692" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn-hero inline-flex items-center justify-center px-8 py-4 text-lg"
+            >
+              Falar com Especialista
+              <img 
+                src="/lovable-uploads/dae22125-e996-407c-8b6e-017686c6788c.png" 
+                alt="WhatsApp"
+                className="w-5 h-5 ml-2"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Catalogo;

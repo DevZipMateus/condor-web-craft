@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,6 +45,9 @@ const Header = () => {
             <button onClick={() => scrollToSection('products')} className="text-condor-navy hover:text-accent transition-colors text-sm xl:text-base">
               Produtos
             </button>
+            <Link to="/catalogo" className="text-condor-navy hover:text-accent transition-colors text-sm xl:text-base">
+              Catálogo
+            </Link>
             <button onClick={() => scrollToSection('contact')} className="text-condor-navy hover:text-accent transition-colors text-sm xl:text-base">
               Contato
             </button>
@@ -70,6 +74,9 @@ const Header = () => {
               <button onClick={() => scrollToSection('products')} className="block w-full text-left text-condor-navy hover:text-accent transition-colors px-4 py-3 text-base">
                 Produtos
               </button>
+              <Link to="/catalogo" className="block w-full text-left text-condor-navy hover:text-accent transition-colors px-4 py-3 text-base">
+                Catálogo
+              </Link>
               <button onClick={() => scrollToSection('contact')} className="block w-full text-left text-condor-navy hover:text-accent transition-colors px-4 py-3 text-base">
                 Contato
               </button>
