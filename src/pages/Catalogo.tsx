@@ -202,45 +202,26 @@ const Catalogo = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
               {papelProducts.map((product, index) => (
                 <div 
                   key={index}
                   className="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border border-border"
                 >
-                  <div className="aspect-video bg-gray-100 flex items-center justify-center">
+                  <div className="aspect-square bg-gray-50 flex items-center justify-center p-4">
                     <img 
                       src={product.image} 
-                      alt={product.title}
-                      className="w-full h-full object-cover"
+                      alt={`Produto ${index + 1}`}
+                      className="w-full h-full object-contain"
                     />
                   </div>
                   
-                  <div className="p-6">
-                    <div className="flex items-start space-x-4 mb-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-                        <product.icon className="text-primary" size={24} />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-xl font-bold text-primary mb-2">{product.title}</h3>
-                        <p className="text-muted-foreground leading-relaxed">{product.description}</p>
-                      </div>
-                    </div>
-                    
-                    <ul className="space-y-2 mb-6">
-                      {product.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center space-x-3">
-                          <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
-                          <span className="text-sm text-muted-foreground">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-
+                  <div className="p-4">
                     <a 
                       href="https://wa.me/5521998822692" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="w-full bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-all duration-300 font-medium flex items-center justify-center"
+                      className="w-full bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-all duration-300 font-medium flex items-center justify-center text-sm"
                     >
                       Solicitar Orçamento
                       <img 
@@ -266,45 +247,26 @@ const Catalogo = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
               {papelCartaoProducts.map((product, index) => (
                 <div 
                   key={index}
                   className="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border border-border"
                 >
-                  <div className="aspect-video bg-gray-100 flex items-center justify-center">
+                  <div className="aspect-square bg-gray-50 flex items-center justify-center p-4">
                     <img 
                       src={product.image} 
-                      alt={product.title}
-                      className="w-full h-full object-cover"
+                      alt={`Produto ${index + 1}`}
+                      className="w-full h-full object-contain"
                     />
                   </div>
                   
-                  <div className="p-6">
-                    <div className="flex items-start space-x-4 mb-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-                        <product.icon className="text-primary" size={24} />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-xl font-bold text-primary mb-2">{product.title}</h3>
-                        <p className="text-muted-foreground leading-relaxed">{product.description}</p>
-                      </div>
-                    </div>
-                    
-                    <ul className="space-y-2 mb-6">
-                      {product.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center space-x-3">
-                          <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
-                          <span className="text-sm text-muted-foreground">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-
+                  <div className="p-4">
                     <a 
                       href="https://wa.me/5521998822692" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="w-full bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-all duration-300 font-medium flex items-center justify-center"
+                      className="w-full bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-all duration-300 font-medium flex items-center justify-center text-sm"
                     >
                       Solicitar Orçamento
                       <img 
