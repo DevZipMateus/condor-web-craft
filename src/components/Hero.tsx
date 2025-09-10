@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 left-10 md:top-20 md:left-20 w-16 h-16 md:w-32 md:h-32 border border-white/30 rounded-full"></div>
         <div className="absolute top-20 right-16 md:top-40 md:right-32 w-12 h-12 md:w-24 md:h-24 border border-white/20 rounded-full"></div>
-        <div className="absolute bottom-20 left-1/4 w-8 h-8 md:w-16 md:h-16 border border-white/40 rounded-full"></div>
+        
       </div>
 
       <div className="section-container relative z-10">
