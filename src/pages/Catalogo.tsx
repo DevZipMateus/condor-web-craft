@@ -93,63 +93,123 @@ const Catalogo = () => {
   const papelCartaoProducts = [
     {
       icon: Package,
-      title: 'Embalagens para Hambúrguer',
-      description: 'Soluções completas para embalar hambúrgueres com qualidade.',
+      title: 'Bandejas de Papel Cartão',
+      description: 'Bandejas brancas resistentes em papel cartão.',
       features: [
-        'Diversos modelos',
-        'Kraft personalizado',
-        'Resistente à umidade',
-        'Personalização completa'
+        'Material resistente',
+        'Ideal para alimentos',
+        'Formato prático',
+        'Cor branca'
       ],
-      image: '/lovable-uploads/0a63552f-8205-4979-bcdd-fba7ced78044.png'
+      image: '/lovable-uploads/e45ed1a5-6f49-43ca-99ab-062cd5cdb487.png'
     },
     {
       icon: Box,
-      title: 'Caixas tipo clamshell (abre e fecha)',
-      description: 'Caixas práticas com sistema de abertura e fechamento seguro.',
+      title: 'Caixa Mello Personalizada',
+      description: 'Caixa personalizada da marca Mello em papel cartão.',
       features: [
-        'Sistema abre e fecha',
-        'Fechamento seguro',
-        'Material resistente',
-        'Design funcional'
+        'Design personalizado',
+        'Material de qualidade',
+        'Impressão colorida',
+        'Marca Mello'
       ],
-      image: '/lovable-uploads/0a63552f-8205-4979-bcdd-fba7ced78044.png'
+      image: '/lovable-uploads/b6330d85-f41c-4c3e-8301-735e523cc0a6.png'
+    },
+    {
+      icon: Box,
+      title: 'Caixa Mello Modelo 2',
+      description: 'Segundo modelo de caixa personalizada Mello.',
+      features: [
+        'Variação de design',
+        'Alta qualidade',
+        'Impressão premium',
+        'Funcional'
+      ],
+      image: '/lovable-uploads/23eb9661-dc25-419f-be84-00e52640aa69.png'
     },
     {
       icon: Container,
-      title: 'Caixas e barquetas de papel cartonado',
-      description: 'Caixas e barquetas resistentes em papel cartonado de qualidade.',
+      title: 'Caixa Kraft Personalizada',
+      description: 'Caixa em papel kraft com impressão personalizada.',
       features: [
-        'Material resistente',
-        'Formato prático',
-        'Ideal para hot dogs',
-        'Qualidade superior'
+        'Material kraft',
+        'Eco-friendly',
+        'Impressão personalizada',
+        'Design moderno'
       ],
-      image: '/lovable-uploads/0a63552f-8205-4979-bcdd-fba7ced78044.png'
-    },
-    {
-      icon: Cookie,
-      title: 'Caixas e Embalagens para Nuggets, Batata Frita e Porções',
-      description: 'Embalagens especializadas para nuggets, batata frita e outras porções.',
-      features: [
-        'Material reforçado',
-        'Ideal para delivery',
-        'Ventilação adequada',
-        'Compartimentos internos'
-      ],
-      image: '/lovable-uploads/0a63552f-8205-4979-bcdd-fba7ced78044.png'
+      image: '/lovable-uploads/7c503e91-61fc-4108-bbff-5465541f7418.png'
     },
     {
       icon: Box,
-      title: 'Baldes de papel/cartão com impressão personalizada',
-      description: 'Baldes resistentes e personalizados para pipoca e outros alimentos.',
+      title: 'Caixa SIAM Colorida',
+      description: 'Caixa colorida da marca SIAM em papel cartão.',
       features: [
-        'Material de alta qualidade',
-        'Impressão personalizada',
-        'Diversos tamanhos',
-        'Resistente e durável'
+        'Design colorido',
+        'Marca SIAM',
+        'Alta qualidade',
+        'Impressão vibrante'
       ],
-      image: '/lovable-uploads/0a63552f-8205-4979-bcdd-fba7ced78044.png'
+      image: '/lovable-uploads/01665177-f5d7-4cb0-a104-d94f873ddb1f.png'
+    },
+    {
+      icon: ShoppingBag,
+      title: 'Sacola UCI Personalizada',
+      description: 'Sacola colorida com design moderno da UCI.',
+      features: [
+        'Design inovador',
+        'Cores vibrantes',
+        'Material resistente',
+        'Marca UCI'
+      ],
+      image: '/lovable-uploads/1260d8ce-2100-4e74-a1c4-ee513b5724e0.png'
+    },
+    {
+      icon: Coffee,
+      title: 'Balde Kinoplex Platinum',
+      description: 'Balde premium Kinoplex com acabamento sofisticado.',
+      features: [
+        'Design premium',
+        'Acabamento platinum',
+        'Alta qualidade',
+        'Marca Kinoplex'
+      ],
+      image: '/lovable-uploads/6b5bbaac-d8fc-40d3-a493-1efbdb1d05dd.png'
+    },
+    {
+      icon: Coffee,
+      title: 'Balde Kinoplex Platinum Modelo 2',
+      description: 'Segundo modelo do balde premium Kinoplex.',
+      features: [
+        'Design elegante',
+        'Material premium',
+        'Acabamento superior',
+        'Linha Platinum'
+      ],
+      image: '/lovable-uploads/a8ede673-842b-4d91-99dd-ffe269b2bb92.png'
+    },
+    {
+      icon: Coffee,
+      title: 'Balde UCI Orient De Lux',
+      description: 'Balde de luxo UCI Orient com design sofisticado.',
+      features: [
+        'Linha De Lux',
+        'Design premium',
+        'Acabamento especial',
+        'Marca UCI Orient'
+      ],
+      image: '/lovable-uploads/0b2da672-f004-4745-aa9a-88952570cb91.png'
+    },
+    {
+      icon: Coffee,
+      title: 'Balde UCI De Lux Modelo 2',
+      description: 'Variação do balde De Lux com design diferenciado.',
+      features: [
+        'Design exclusivo',
+        'Acabamento de luxo',
+        'Material premium',
+        'UCI De Lux'
+      ],
+      image: '/lovable-uploads/b7366485-ba14-4e1e-a4a3-0134b676371d.png'
     }
   ];
 
