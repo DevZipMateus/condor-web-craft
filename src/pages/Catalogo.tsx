@@ -210,6 +210,30 @@ const Catalogo = () => {
         'UCI De Lux'
       ],
       image: '/lovable-uploads/b7366485-ba14-4e1e-a4a3-0134b676371d.png'
+    },
+    {
+      icon: ShoppingBag,
+      title: 'Sacola Kraft 01',
+      description: 'Sacola em papel kraft natural eco-friendly.',
+      features: [
+        'Material kraft natural',
+        'Eco-friendly',
+        'Resistente',
+        'Sustentável'
+      ],
+      image: '/lovable-uploads/kraft-01-bag.png'
+    },
+    {
+      icon: ShoppingBag,
+      title: 'Sacola Kraft 01 com Alça',
+      description: 'Sacola kraft com alças resistentes para maior praticidade.',
+      features: [
+        'Com alças de papel',
+        'Material kraft',
+        'Prática e resistente',
+        'Design funcional'
+      ],
+      image: '/lovable-uploads/kraft-01-bag-handle.png'
     }
   ];
 
