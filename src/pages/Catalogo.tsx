@@ -234,6 +234,54 @@ const Catalogo = () => {
         'Design funcional'
       ],
       image: '/lovable-uploads/kraft-01-bag-handle.png'
+    },
+    {
+      icon: Coffee,
+      title: 'Embalagens Pipoca Variadas',
+      description: 'Embalagens para pipoca em diferentes designs e cores.',
+      features: [
+        'Designs variados',
+        'Cores vibrantes',
+        'Material resistente',
+        'Múltiplas opções'
+      ],
+      image: '/lovable-uploads/pipoca-containers.png'
+    },
+    {
+      icon: Coffee,
+      title: 'Embalagens Pipoca Tamanhos',
+      description: 'Embalagens para pipoca em diferentes tamanhos.',
+      features: [
+        'Três tamanhos disponíveis',
+        'Design clássico',
+        'Material de qualidade',
+        'Impressão personalizada'
+      ],
+      image: '/lovable-uploads/pipoca-sizes.png'
+    },
+    {
+      icon: Coffee,
+      title: 'Container UCI De Lux Premium',
+      description: 'Container premium UCI De Lux com design sofisticado.',
+      features: [
+        'Design premium',
+        'Marca UCI De Lux',
+        'Acabamento especial',
+        'Alta qualidade'
+      ],
+      image: '/lovable-uploads/uci-delux-container.png'
+    },
+    {
+      icon: Container,
+      title: 'Bandeja Personalizada',
+      description: 'Bandeja com design personalizado e colorido.',
+      features: [
+        'Design personalizado',
+        'Impressão colorida',
+        'Formato funcional',
+        'Material resistente'
+      ],
+      image: '/lovable-uploads/branded-tray.png'
     }
   ];
 
